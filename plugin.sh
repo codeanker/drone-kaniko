@@ -93,11 +93,12 @@ fi
 /kaniko/executor -v ${LOG} \
     --context=${CONTEXT} \
     --dockerfile=${DOCKERFILE} \
-    # --cache=true \
-    # --cache-repo=registry.registry.svc.cluster.local:5000/${PLUGIN_REPO} \
     ${EXTRA_OPTS} \
     ${DESTINATIONS} \
     ${CACHE:-} \
     ${TARGET:-} \
     ${BUILD_ARGS:-} \
     ${BUILD_ARGS_FROM_ENV:-}
+
+    # --cache=true \
+    # --cache-repo=registry.registry.svc.cluster.local:5000/${PLUGIN_REPO} \
