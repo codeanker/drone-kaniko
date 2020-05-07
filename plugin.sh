@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+env
+
 export PATH=$PATH:/kaniko/
 
 REGISTRY=${PLUGIN_REGISTRY:-index.docker.io}
