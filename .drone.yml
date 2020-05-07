@@ -5,7 +5,7 @@ name: default
 
 steps:
 - name: kaniko
-  image: codeanker/drone-kaniko:0.5.1
+  image: codeanker/drone-kaniko:0.5.2
   settings:
     repo: codeanker/drone-kaniko
     tags: ${DRONE_COMMIT_SHA}
